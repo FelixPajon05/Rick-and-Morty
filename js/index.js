@@ -1,17 +1,9 @@
-function getAllCharacters(characters) {
-    
-    const results = fetch("https://rickandmortyapi.com/api/character");
-    
-    results
-        .then(res => res.json())
-        .then(data => {
-            characters(data)
-    });
-}
 
-function getCharacter(characters) {
-    
-    const results = fetch("https://rickandmortyapi.com/api/character");
+
+
+function getAllCharacters(characters) {
+
+    const results = fetch("https://rickandmortyapi.com/api/character/");
     
     results
         .then(res => res.json())
